@@ -35,3 +35,15 @@
     <button mat-fab disableRipple="">Fab</button>
     <button mat-mini-fab>minifab</button>
 </div>
+
+<div>
+    <!-- <mat-button-toggle #toggleBtn checked>toggle</mat-button-toggle>
+    {{toggleBtn.checked}} -->
+
+    <mat-button-toggle-group #toggleGroup="matButtonToggleGroup">
+        <mat-button-toggle value="angular">Angular</mat-button-toggle>
+        <mat-button-toggle value="react">React</mat-button-toggle>
+        <mat-button-toggle value="vue">Vue</mat-button-toggle>
+    </mat-button-toggle-group>
+    {{toggleGroup.value}}
+</div>
