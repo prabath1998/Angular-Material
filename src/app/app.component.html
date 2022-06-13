@@ -52,3 +52,22 @@
 <div>
     <mat-icon color="warn">grade</mat-icon>
 </div>
+
+<br><br>
+
+<!-- bagdes -->
+<div>
+    <span matBadge="5" matBadgeOverlap="false" matBadgeColor="accent">Notifications</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="below before" matBadgeOverlap="false" matBadgeDescription="bla bla bla">Notifications</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="below after" matBadgeOverlap="false">Notifications</span>
+</div>
+<div>
+    <span matBadge="5" matBadgePosition="above before" matBadgeOverlap="false">Notifications</span>
+</div>
+<div>
+    <button mat-raised-button [matBadge]="notifications" [matBadgeHidden]="notifications == 0" matBadgeOverlap="false" color="warn">Notifications</button>
+</div>
